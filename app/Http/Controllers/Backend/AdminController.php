@@ -31,7 +31,7 @@ class AdminController extends Controller
             "green" => '#b1deb1',
             "yellow" => '#ffff94',
             "red" => '#fc7676',
-            "blue" => '#4b9cd3',
+            "blue" => '#a1caf1',
             "light-grey" => '#d3d3d3',
         ];
         $start_date = $request->start_date ? $request->start_date : date("Y-m-d");
