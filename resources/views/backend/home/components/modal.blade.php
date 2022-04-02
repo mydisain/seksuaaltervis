@@ -104,7 +104,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="col-md-6 form-group">
+                            <label for="start_time">Eesnimi</label>
+                            <input type="text" class="form-control" name="first_name" value="@if ($order != null) {{ $order->first_name }} @endif" />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="start_time">Perekonnanimi</label>
+                            <input type="text" class="form-control" name="last_name" value="@if ($order != null) {{ $order->last_name }} @endif" />
+                        </div>
                         <div class="col-md-6 form-group">
                             <label for="start_time">Tüüp</label>
                             <select class="form-control mb-1" id="icon" name="type">
@@ -114,14 +121,6 @@
                                 <option value="blue" @if ($order != null && $order->type == "blue") selected @endif >Kohal esmane</option>
                                 <option value="light-grey" @if ($order != null && $order->type == "light-grey") selected @endif >Puhkus</option>
                             </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="start_time">Eesnimie</label>
-                            <input type="text" class="form-control" name="first_name" value="@if ($order != null) {{ $order->first_name }} @endif" />
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="start_time">Perekonnanimi</label>
-                            <input type="text" class="form-control" name="last_name" value="@if ($order != null) {{ $order->last_name }} @endif" />
                         </div>
                         <div class="col-md-6 form-group">
                             
